@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elotes Don Frany - El sabor que te hará volver</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts: Playfair Display y Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <img src="logo.jpg" alt="Elotes Don Frany" class="logo-nav">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-nosotros">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promociones">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-lg-6 text-white">
+                    <h1 class="display-3 fw-bold mb-4">Elotes Don Frany</h1>
+                    <h2 class="h3 mb-4 text-light">El sabor que te hará volver</h2>
+                    <p class="lead mb-4">Elotes gourmet, elotes revolcadores y esquites gourmet, preparados con los mejores ingredientes y un servicio excepcional.</p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <button class="btn btn-dorado btn-lg" data-bs-toggle="modal" data-bs-target="#modalPedido">
+                            <i class="fas fa-shopping-cart me-2"></i>Haz tu pedido ahora
+                        </button>
+                        <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#modalCotizacion">
+                            <i class="fas fa-calendar-alt me-2"></i>Solicita cotización
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="elote-gourmet.jpg" alt="Elote Gourmet" class="img-fluid rounded-lg shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="display-5 fw-bold text-verde mb-4">Conoce Elotes Don Frany</h2>
+                    <p class="lead text-muted mb-4">
+                        En Elotes Don Frany nos apasiona ofrecerte una experiencia gastronómica única. Nuestro objetivo es combinar lo mejor de la tradición con un toque gourmet, para que disfrutes de elotes preparados como nunca antes. Ya sea que busques un antojo rápido o una opción deliciosa para tu evento, Elotes Don Frany está aquí para ofrecerte un servicio de alta calidad.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <div class="icon-circle bg-verde text-white mb-3">
+                                <i class="fas fa-leaf fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Ingredientes Frescos</h5>
+                            <p class="card-text text-muted">Desde el maíz hasta los toppings, seleccionamos solo lo mejor para ti.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <div class="icon-circle bg-dorado text-white mb-3">
+                                <i class="fas fa-sparkles fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Innovación Constante</h5>
+                            <p class="card-text text-muted">Fusión de sabores únicos con opciones gourmet que redefinen el concepto del elote.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 h-100 shadow-sm hover-card">
+                        <div class="card-body text-center">
+                            <div class="icon-circle bg-verde text-white mb-3">
+                                <i class="fas fa-heart fa-2x"></i>
+                            </div>
+                            <h5 class="card-title fw-bold">Atención Excepcional</h5>
+                            <p class="card-text text-muted">Nos preocupamos por cada detalle para brindarte una experiencia inolvidable.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto text-center">
+                    <p class="h5 text-verde fw-bold">En Elotes Don Frany, no solo vendemos elotes; creamos recuerdos deliciosos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Menú -->
+    <section id="menu" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-verde mb-3">Descubre nuestro Menú</h2>
+                <p class="lead text-muted">Desde los elotes tradicionales hasta innovaciones gourmet, nuestros productos están diseñados para satisfacer todos los gustos.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Elote Tradicional -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card border-0 shadow-sm h-100">
+                        <img src="elote-tradicional.jpg" class="card-img-top" alt="Elote Tradicional">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-verde">Elote Tradicional</h5>
+                            <p class="card-text text-muted">Preparado con crema, mayonesa, queso rallado, chile en polvo y limón.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dorado">Clásico</span>
+                                <button class="btn btn-sm btn-verde" data-bs-toggle="modal" data-bs-target="#modalPedido">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elote Gourmet -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card border-0 shadow-sm h-100">
+                        <img src="elote-gourmet.jpg" class="card-img-top" alt="Elote Gourmet">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-verde">Elote Gourmet</h5>
+                            <p class="card-text text-muted">Con ingredientes especiales como queso menonita, arrachera, o camarón para un toque único y delicioso.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dorado">Premium</span>
+                                <button class="btn btn-sm btn-verde" data-bs-toggle="modal" data-bs-target="#modalPedido">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elote Revolcado -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card border-0 shadow-sm h-100">
+                        <img src="elote-revolcado.jpg" class="card-img-top" alt="Elote Revolcado">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-verde">Elote Revolcado</h5>
+                            <p class="card-text text-muted">Doritos, Chetos, Fleminghot, Takis y más. Una explosión de sabor en cada bocado.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dorado">Especial</span>
+                                <button class="btn btn-sm btn-verde" data-bs-toggle="modal" data-bs-target="#modalPedido">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Esquites -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card border-0 shadow-sm h-100">
+                        <img src="esquite.jpg" class="card-img-top" alt="Esquites">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-verde">Esquites</h5>
+                            <p class="card-text text-muted">Servidos con la misma calidad, ideales para quienes prefieren disfrutar de una versión en vaso.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dorado">Refrescante</span>
+                                <button class="btn btn-sm btn-verde" data-bs-toggle="modal" data-bs-target="#modalPedido">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Esquites Gourmet -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card border-0 shadow-sm h-100">
+                        <img src="esquite-gourmet.jpg" class="card-img-top" alt="Esquites Gourmet">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-verde">Esquites Gourmet</h5>
+                            <p class="card-text text-muted">Con ingredientes especiales como camarón, tuétano, birria y más para una experiencia premium.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dorado">Gourmet</span>
+                                <button class="btn btn-sm btn-verde" data-bs-toggle="modal" data-bs-target="#modalPedido">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Opciones Veganas -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card menu-card border-0 shadow-sm h-100">
+                        <img src="esquite-vegano.jpg" class="card-img-top" alt="Opciones Veganas">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-verde">Opciones Veganas</h5>
+                            <p class="card-text text-muted">Con mayonesa y queso a base de plantas, para que todos puedan disfrutar de un buen elote.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-dorado">Vegano</span>
+                                <button class="btn btn-sm btn-verde" data-bs-toggle="modal" data-bs-target="#modalPedido">Pedir</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <button class="btn btn-lg btn-verde" data-bs-toggle="modal" data-bs-target="#modalPedido">
+                    <i class="fas fa-shopping-cart me-2"></i>¡Haz tu pedido ahora!
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Promociones -->
+    <section id="promociones" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-verde mb-3">Ofertas Exclusivas para Ti</h2>
+                <p class="lead text-muted">Queremos que disfrutes más con cada compra. ¡No te pierdas nuestras increíbles promociones!</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="promo-card text-center p-4 bg-white rounded-lg shadow-sm">
+                        <div class="promo-icon mb-3">
+                            <i class="fas fa-gift fa-3x text-dorado"></i>
+                        </div>
+                        <h5 class="fw-bold text-verde mb-2">Compra 5, Lleva 6</h5>
+                        <p class="text-muted mb-0">Compra 5 elotes y recibe el 6° gratis.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="promo-card text-center p-4 bg-white rounded-lg shadow-sm">
+                        <div class="promo-icon mb-3">
+                            <i class="fas fa-ticket-alt fa-3x text-dorado"></i>
+                        </div>
+                        <h5 class="fw-bold text-verde mb-2">Cupones de Descuento</h5>
+                        <p class="text-muted mb-0">Junta 5 cupones y recibe un elote o esquite gratis.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="promo-card text-center p-4 bg-white rounded-lg shadow-sm">
+                        <div class="promo-icon mb-3">
+                            <i class="fas fa-star fa-3x text-dorado"></i>
+                        </div>
+                        <h5 class="fw-bold text-verde mb-2">Primera Compra</h5>
+                        <p class="text-muted mb-0">Recibe un esquite chico gratis en tu primera compra.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <p class="h5 text-verde fw-bold">¡Aprovecha nuestras promociones y disfruta del mejor elote preparado en la ciudad!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section id="testimonios" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-verde mb-3">Lo que dicen nuestros clientes</h2>
+                <p class="lead text-muted">En Elotes Don Frany, nuestros clientes siempre tienen algo positivo que decir sobre su experiencia.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                            </div>
+                            <p class="card-text mb-4 fst-italic">"Siempre pido para mis reuniones familiares. La calidad y el sabor son excepcionales. ¡Nunca me decepcionan!"</p>
+                            <h6 class="fw-bold text-verde">Andrea De Jesus</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                            </div>
+                            <p class="card-text mb-4 fst-italic">"Elote gourmet es lo mejor que he probado. La mezcla de sabores es perfecta y siempre está fresco."</p>
+                            <h6 class="fw-bold text-verde">Carlos Hernández</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial-card card border-0 shadow-sm h-100">
+                        <div class="card-body">
+                            <div class="stars mb-3">
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                                <i class="fas fa-star text-dorado"></i>
+                            </div>
+                            <p class="card-text mb-4 fst-italic">"El servicio es rápido y confiable. ¡Me encanta que pueda pedir a domicilio cuando tengo antojo de un buen elote!"</p>
+                            <h6 class="fw-bold text-verde">María López</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Sostenibilidad -->
+    <section id="sostenibilidad" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold text-verde mb-4">Compromiso con el Medio Ambiente</h2>
+                    <p class="lead text-muted mb-4">En Elotes Don Frany, no solo nos importa ofrecerte los mejores elotes, sino también cuidar de nuestro planeta. Por eso, trabajamos con empaques 100% biodegradables para que disfrutes de nuestros productos con total conciencia ambiental.</p>
+                    
+                    <div class="mb-3">
+                        <h5 class="fw-bold text-verde mb-2">
+                            <i class="fas fa-leaf text-verde me-2"></i>Ingredientes frescos y locales
+                        </h5>
+                        <p class="text-muted">Siempre que es posible, trabajamos con proveedores locales y seleccionamos ingredientes frescos y naturales.</p>
+                    </div>
+
+                    <div class="mb-3">
+                        <h5 class="fw-bold text-verde mb-2">
+                            <i class="fas fa-recycle text-verde me-2"></i>Embalaje ecológico
+                        </h5>
+                        <p class="text-muted">Todos nuestros empaques son biodegradables para reducir el impacto ambiental.</p>
+                    </div>
+
+                    <p class="h6 text-verde fw-bold mt-4">Porque disfrutar un buen elote también puede ser una acción responsable.</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="bg-verde text-white p-5 rounded-lg text-center">
+                        <i class="fas fa-leaf fa-5x mb-3 opacity-75"></i>
+                        <h4 class="fw-bold mb-3">100% Comprometidos</h4>
+                        <p class="mb-0">Con la sostenibilidad y el cuidado del medio ambiente en cada producto que preparamos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-verde mb-3">¿Tienes preguntas o necesitas más información?</h2>
+                <p class="lead text-muted">Estamos aquí para ayudarte. Ponte en contacto con nosotros para cualquier duda o para realizar un pedido.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-4 text-center">
+                    <div class="contact-card p-4">
+                        <div class="contact-icon bg-verde text-white mb-3">
+                            <i class="fas fa-phone fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold text-verde mb-2">Teléfono</h5>
+                        <p class="text-muted mb-0">
+                            <a href="tel:2222222222" class="text-decoration-none text-dark">222-222-2222</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="contact-card p-4">
+                        <div class="contact-icon bg-dorado text-white mb-3">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold text-verde mb-2">Correo Electrónico</h5>
+                        <p class="text-muted mb-0">
+                            <a href="mailto:contacto@elotesdonfrany.com" class="text-decoration-none text-dark">contacto@elotesdonfrany.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <div class="contact-card p-4">
+                        <div class="contact-icon bg-verde text-white mb-3">
+                            <i class="fas fa-map-marker-alt fa-2x"></i>
+                        </div>
+                        <h5 class="fw-bold text-verde mb-2">Ubicación</h5>
+                        <p class="text-muted mb-0">Síguenos en redes sociales para más información</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mb-5">
+                <h5 class="fw-bold text-verde mb-4">Síguenos en Redes Sociales</h5>
+                <div class="social-links">
+                    <a href="#" class="social-icon bg-verde text-white" title="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon bg-dorado text-white" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon bg-verde text-white" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA Final -->
+    <section class="cta-final py-5 bg-verde text-white">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-4">¡Haz tu pedido ahora!</h2>
+            <p class="lead mb-4">No pierdas la oportunidad de saborear lo mejor de la gastronomía mexicana, con opciones tradicionales y gourmet preparadas con los mejores ingredientes.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <button class="btn btn-dorado btn-lg" data-bs-toggle="modal" data-bs-target="#modalPedido">
+                    <i class="fas fa-shopping-cart me-2"></i>Haz tu pedido ahora
+                </button>
+                <button class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#modalCotizacion">
+                    <i class="fas fa-calendar-alt me-2"></i>Solicita una cotización
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">&copy; 2024 Elotes Don Frany. Todos los derechos reservados.</p>
+            <p class="text-muted mb-0">Preparados con amor, ingredientes frescos y compromiso con la calidad.</p>
+        </div>
+    </footer>
+
+    <!-- Modal Pedido -->
+    <div class="modal fade" id="modalPedido" tabindex="-1" aria-labelledby="modalPedidoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-verde text-white">
+                    <h5 class="modal-title" id="modalPedidoLabel">
+                        <i class="fas fa-shopping-cart me-2"></i>Realizar Pedido
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formPedido">
+                        <div class="mb-3">
+                            <label for="nombrePedido" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombrePedido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoPedido" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefonoPedido" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productoPedido" class="form-label">Producto</label>
+                            <select class="form-select" id="productoPedido" required>
+                                <option value="">Selecciona un producto</option>
+                                <option value="Elote Tradicional">Elote Tradicional</option>
+                                <option value="Elote Gourmet">Elote Gourmet</option>
+                                <option value="Elote Revolcado">Elote Revolcado</option>
+                                <option value="Esquites">Esquites</option>
+                                <option value="Esquites Gourmet">Esquites Gourmet</option>
+                                <option value="Opciones Veganas">Opciones Veganas</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidadPedido" class="form-label">Cantidad</label>
+                            <input type="number" class="form-control" id="cantidadPedido" min="1" value="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="comentariosPedido" class="form-label">Comentarios especiales</label>
+                            <textarea class="form-control" id="comentariosPedido" rows="3" placeholder="Ej: Sin picante, con extra queso..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-verde" onclick="enviarPedido()">Enviar Pedido</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Cotización -->
+    <div class="modal fade" id="modalCotizacion" tabindex="-1" aria-labelledby="modalCotizacionLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-dorado text-white">
+                    <h5 class="modal-title" id="modalCotizacionLabel">
+                        <i class="fas fa-calendar-alt me-2"></i>Solicitar Cotización para Evento
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formCotizacion">
+                        <div class="mb-3">
+                            <label for="nombreCotizacion" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombreCotizacion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefonoCotizacion" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" id="telefonoCotizacion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correoCotizacion" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="correoCotizacion" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fechaEvento" class="form-label">Fecha del Evento</label>
+                            <input type="date" class="form-control" id="fechaEvento" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="cantidadPersonas" class="form-label">Cantidad de Personas</label>
+                            <input type="number" class="form-control" id="cantidadPersonas" min="1" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tipoEvento" class="form-label">Tipo de Evento</label>
+                            <select class="form-select" id="tipoEvento" required>
+                                <option value="">Selecciona un tipo</option>
+                                <option value="Cumpleaños">Cumpleaños</option>
+                                <option value="Boda">Boda</option>
+                                <option value="Corporativo">Evento Corporativo</option>
+                                <option value="Reunion">Reunión Familiar</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="detallesCotizacion" class="form-label">Detalles Adicionales</label>
+                            <textarea class="form-control" id="detallesCotizacion" rows="3" placeholder="Cuéntanos más sobre tu evento..."></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-dorado" onclick="enviarCotizacion()">Enviar Cotización</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Scripts personalizados -->
+    <script src="script.js"></script>
+</body>
+</html>
+
